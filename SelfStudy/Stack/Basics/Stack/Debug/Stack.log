@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\Học tập\Code\Stack\Stack\Source.cpp(93,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+  Stack.vcxproj -> D:\Học tập\Code\Stack\Debug\Stack.exe
