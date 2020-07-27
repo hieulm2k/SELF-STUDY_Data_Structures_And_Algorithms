@@ -5,7 +5,6 @@
 // subsequence of array of N elements
 
 #include <iostream>
-#include <stack>
 using namespace std;
 
 void solve_bottom_up();
