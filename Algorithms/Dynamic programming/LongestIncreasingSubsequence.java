@@ -20,11 +20,11 @@ public class LongestIncreasingSubsequence {
         l[n + 1] = 1;
         startOf[1] = n + 1;
 
-        solve_bottom_up(a, l, t, startOf);
+        solveBottomUp(a, l, t, startOf);
         printResult(a, t);
     }
 
-    private static void solve_bottom_up(int[] a, int[] l, int[] t, int[] startOf) {
+    private static void solveBottomUp(int[] a, int[] l, int[] t, int[] startOf) {
         for (int i = a.length - 2; i >= 0; --i) {
             int j = find(i, a, startOf);
             int k = l[j] + 1;
