@@ -54,11 +54,9 @@ public class DirectivityBridgesCutVertices {
 
         System.out.println("\nCut vertices:");
         for (int v = 1; v <= n; ++v) {
-            if (parent[v] != -1) {
-                int u = parent[v];
-                if (low[v] >= number[u]) {
-                    isCut[u] = isCut[u] || parent[u] != -1 || nChildren[u] >= 2;
-                }
+            int u = parent[v];
+            if (u != -1 && low[v] >= number[u]) {
+                isCut[u] = isCut[u] || parent[u] != -1 || nChildren[u] >= 2;
             }
         }
 
