@@ -93,11 +93,7 @@ public class BST {
             return false;
         }
 
-        if (!isBinarySearchTree(root.left) || !isBinarySearchTree(root.right)) {
-            return false;
-        }
-
-        return true;
+        return isBinarySearchTree(root.left) && isBinarySearchTree(root.right);
     }
 
     private int minValue(Node root) {
